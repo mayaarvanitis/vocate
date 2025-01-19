@@ -35,7 +35,7 @@ _Vocate_ provides a **comprehensive platform** to help individuals with PCOS adv
   - Identify trends and patterns in symptoms with intuitive data visualizations.  
 
 <div align="center">
-  <img src="assets/ss1.png" alt="Image 1" width="150"/>
+  <img src="assets/images/ss1.png" alt="Image 1" width="150"/>
   <img src="assets/ss2.png" alt="Image 2" width="150"/>
   <img src="assets/ss3.png" alt="Image 3" width="150"/>
   <img src="assets/ss4.png" alt="Image 4" width="150"/>
