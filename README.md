@@ -1,5 +1,5 @@
 # 🌿 vocate: be Heard. be Healthy.
-![Vocate Screenshot](assets/vocate.png)
+![Vocate Screenshot](assets/vocare.png)
 
 _vocate_ is a mobile app designed to empower individuals with **Polycystic Ovary Syndrome (PCOS)** to take control of their healthcare journey. The app helps users track symptoms, identify patterns, and confidently advocate for their needs during medical appointments. By combining an intuitive symptom tracker, personalized data insights, and an AI-powered chatbot, _Vocate_ is here to ensure that users feel heard, prepared, and supported.  
 
