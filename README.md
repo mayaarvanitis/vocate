@@ -6,6 +6,7 @@
 _vocate_ is a mobile app designed to empower individuals with **Polycystic Ovary Syndrome (PCOS)** to take control of their healthcare journey. The app helps users track symptoms, identify patterns, and confidently advocate for their needs during medical appointments. By combining an intuitive symptom tracker, personalized data insights, and an AI-powered chatbot, _Vocate_ is here to ensure that users feel heard, prepared, and supported.  
 
 ---
+Runner up of McWics 2025 Hackathon!
 
 ## 💡 Inspiration  
 For many individuals with PCOS, medical appointments can feel overwhelming. Describing symptoms accurately, knowing which questions to ask, and advocating for your needs isn’t always easy—especially when the nerves kick in!  
