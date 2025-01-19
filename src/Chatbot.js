@@ -19,7 +19,7 @@ const Chatbot = () => {
     const [error, setError] = useState(null);
     const [isSpeaking, setIsSpeaking] = useState(false);
 
-    const API_KEY = "__________";
+    const API_KEY = "AIzaSyD15yuSaIEmRdceoRxUaCysZHg93Npvlfo";
 
     const handleUserInput = async () => {
         let updatedChat = [
@@ -35,7 +35,7 @@ const Chatbot = () => {
 
         try {
             const response = await axios.post(
-                'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=______________',
+                'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyD15yuSaIEmRdceoRxUaCysZHg93Npvlfo',
                 {
                     contents: updatedChat,
 
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 16,
-        backgroundColor: "#f8f8f8",
+        backgroundColor: "#FFF7E8",
     },
     title: {
         fontSize: 24,
@@ -144,19 +144,21 @@ const styles = StyleSheet.create({
         heigher: 50,
         marginRight: 10,
         padding: 8,
-        borderColor: "#333",
+        borderColor: "#E7DAC1",
         borderWidth: 1,
         borderRadius: 25,
         color: "#333",
-        backgroundColor: "#fff",
+        backgroundColor: "#E7DAC1",
     },
     button: {
         padding: 10,
-        backgroundColor: "#007AFF",
+        backgroundColor: "#EF969E",
         borderRadius: 25,
     },
     buttonText: {
         color: "#fff",
+        fontWeight: "bold",
+        fontFamily: "Archivo",
         textAlign: "center",
     },
     loading: {
