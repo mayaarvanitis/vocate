@@ -35,7 +35,7 @@ const Chatbot = () => {
 
         try {
             const response = await axios.post(
-                'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyD15yuSaIEmRdceoRxUaCysZHg93Npvlfo',
+                'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=______________',
                 {
                     contents: updatedChat,
 
