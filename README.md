@@ -1,4 +1,4 @@
-# 🌿 vocate: be Heard. be Healthy.
+# 🌿 vocate: be heard. be healthy.
 <div align="center">
   <img src="assets/vocare.png" alt="Vocate Banner" width="500"/>
 </div>
