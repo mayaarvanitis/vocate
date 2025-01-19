@@ -14,6 +14,7 @@ import SymptomDetails from "/Users/mayaarvanitis/vocate/screens/SymptomDetails.j
 const Tab = createBottomTabNavigator();
 const LogStack = createStackNavigator();
 
+// Custom header component
 function CustomHeader({ navigation, title }) {
   return (
     <View style={styles.headerContainer}>
@@ -25,12 +26,13 @@ function CustomHeader({ navigation, title }) {
   );
 }
 
+// LogSymptomStack
 function LogSymptomStack() {
   return (
     <LogStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#FAF3E0", // Match your app's theme
+          backgroundColor: "#FAF3E0", 
         },
         headerTintColor: "#EF969E", // Text color
         headerTitleAlign: "center", // Center align the title
@@ -38,11 +40,13 @@ function LogSymptomStack() {
       }}
     >
       <LogStack.Screen
+      //Start with the log screen options.
         name="LogScreen"
         component={LogScreen}
         options={{ title: "Log Symptoms" }}
       />
       <LogStack.Screen
+      // Add the symptom detail options
         name="SymptomDetails"
         component={SymptomDetails}
         options={({ navigation }) => ({
@@ -58,9 +62,12 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           headerShown: false, // Disable the white header globally for all tabs
+          
+          // Function to determine the icon for each tab
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
-
+            
+            // Set the icon based on the route name
             if (route.name === "Home") {
               iconName = focused ? "home" : "home-outline";
             } else if (route.name === "Log Symptom") {
@@ -68,27 +75,30 @@ export default function App() {
             } else if (route.name === "Chatbot") {
               iconName = focused ? "chatbubbles" : "chatbubbles-outline";
             }
-
+            
+            // Return the Ionicons component with the correct icon
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: "#EF969E",
-          tabBarInactiveTintColor: "#888",
+          // Tab bar style
+          tabBarActiveTintColor: "#EF969E", // Color of active tab icon and label
+          tabBarInactiveTintColor: "#888", // Color of inactive tab icon and label
           tabBarStyle: {
-            backgroundColor: "#FAF3E0",
-            borderTopWidth: 0,
-            elevation: 10,
-            shadowColor: "#000",
-            shadowOpacity: 0.1,
-            shadowOffset: { width: 0, height: -2 },
-            shadowRadius: 5,
-            height: 60,
+            backgroundColor: "#FAF3E0", // Background color of the tab bar
+            borderTopWidth: 0, // Remove top border
+            elevation: 10, 
+            shadowColor: "#000",  // Add shadow to the tab bar
+            shadowOpacity: 0.1, // Shadow opacity
+            shadowOffset: { width: 0, height: -2 }, // Shadow offset
+            shadowRadius: 5, // Shadow radius
+            height: 60, // Set the height of the tab bar
           },
           tabBarLabelStyle: {
-            fontSize: 12,
+            fontSize: 12, 
             fontFamily: "Archivo",
           },
         })}
       >
+        {/* Define the screens for the tab navigator */}
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Log Symptom" component={LogSymptomStack} />
         <Tab.Screen name="Chatbot" component={ChatHomeScreen} />
@@ -99,8 +109,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   headerContainer: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: "row", // Arrange children in a row
+    alignItems: "center", // Align children vertically
     backgroundColor: "#FAF3E0",
     paddingHorizontal: 15,
     paddingVertical: 10,
